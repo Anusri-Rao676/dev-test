@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("checkout repo"){
             steps{
-                git url: "https://github.com/sumanthskc/devops_aws_assignment.git" , branch: "feature"
+                git url: "https://github.com/Anusri-Rao676/dev-test.git" , branch: "main"
             }
         }
         stage("ziping and uploading"){
