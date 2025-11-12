@@ -24,8 +24,8 @@ pipeline{
 
                 withCredentials([aws(credentialsId: AWS_CREDENTIALS_ID, variablePrefix: 'AWS')]){
                 sh "aws lambda update-function-code \
-                --function-name lambda_handler \
-                --s3-bucket devops-eval-buck-1  \
+                --function-name mylambda \
+                --s3-bucket target-19099  \
                 --s3-key lambda_function.zip \
                 --publish"
                 }
