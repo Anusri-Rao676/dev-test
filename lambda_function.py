@@ -1,7 +1,7 @@
 import json
 import boto3
 from botocore.exceptions import ClientError
-
+#comment
 dynamodb = boto3.resource('dynamodb')
 table_name = "Emp_Master"
 table = dynamodb.Table(table_name)
