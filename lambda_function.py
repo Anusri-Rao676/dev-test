@@ -1,10 +1,14 @@
 import json
 import boto3
 from botocore.exceptions import ClientError
+import logging
 
 dynamodb = boto3.resource('dynamodb')
 table_name = "Emp_Master"
 table = dynamodb.Table(table_name)
+
+logger = logging.getLogger(__name__)
+logger.info("lambda triggered)
 
 def lambda_handler(event, context):
     try:
